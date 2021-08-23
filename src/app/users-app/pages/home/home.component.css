@@ -1,0 +1,45 @@
+.hero {
+  /*background-image: url("portada.jpg");*/
+  height: 100%;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  text-align: center;
+}
+
+.container-hero {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  /*background-color: rgba(0, 128, 0, 0.5);*/
+  width: 90%;
+  height: 100%;
+}
+
+h1 {
+  font-size: 50px;
+  font-weight: bold;
+  padding-top: 60px;
+  color: #008954;
+}
+
+.card-home{
+  margin-top: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  border-radius: 10%;
+  color: #F1F3F2;
+  border: 1px solid #008954;
+  width: 30%;
+  height: 500px;
+  background: #282E2B;
+}
+
+.button-card{
+  margin-left: 33%;
+  background: #008954;
+  border-radius: 5px;
+  height: 40px;
+  width: 35%;
+}

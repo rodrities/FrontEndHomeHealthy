@@ -1,0 +1,28 @@
+h2 {
+  font-size: 25px;
+  margin-bottom: 30px;
+  font-weight: bold;
+  color: darkcyan;
+}
+.button-detail {
+  background-color: darkcyan;
+  margin-left: 50px;
+}
+.container-card {
+  border: solid 1px darkcyan;
+}
+.container-actions {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 50px;
+  margin-left: 33% ;
+}
+.title-container {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 30px;
+}
+.add-button{
+  background: darkcyan;
+  margin: 0 auto;
+}

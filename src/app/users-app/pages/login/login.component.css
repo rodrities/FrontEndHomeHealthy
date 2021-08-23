@@ -1,0 +1,52 @@
+.login-container{
+  height: 600px;
+
+  display: flex;
+}
+.login-img-container{
+  width: 50%;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  /*background-image: url("loginimg.jpg")  ;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;*/
+}
+.login-img-container img{
+  position: absolute;
+  top: -15%;
+  width: 100% ;
+  vertical-align: center;
+}
+.form-container {
+  width: 400px;
+  height: 300px;
+  margin: auto;
+  border: solid 2px #008954;
+}
+.form-field {
+  display: block;
+}
+
+.container-actions {
+  width: 100px;
+  margin-left: 170px;
+}
+
+mat-card-title {
+  color: #008954;
+  font-weight: bold;
+}
+
+.button-login {
+  background-color: #008954;
+}
+
+.register-text {
+  margin-left: 23%;
+  color: grey;
+}
+.register-a {
+  color: #008954;
+}

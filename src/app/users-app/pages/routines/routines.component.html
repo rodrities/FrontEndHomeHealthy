@@ -1,0 +1,17 @@
+<app-user-header></app-user-header>
+<div class="container">
+  <h2>Tus Rutinas:</h2>
+  <div class="card-grid container">
+    <mat-card class="container-card" *ngFor="let data of dataSource.data">
+      <mat-card-header>
+        <mat-card-title>{{ data.name | uppercase }}</mat-card-title>
+      </mat-card-header>
+      <div class="crop-image">
+        <img src="assets/rutina.jpg" alt="">
+      </div>
+      <mat-card-actions class="container-actions">
+        <a  mat-raised-button class="button-detail" [routerLink]="['/routines', data.id]">Ver detalle</a>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+</div>

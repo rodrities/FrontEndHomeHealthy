@@ -1,0 +1,23 @@
+<mat-toolbar class="container-bar" color="primary">
+  <mat-toolbar-row>
+    <button mat-button [matMenuTriggerFor]="appMenu">
+      <mat-icon>settings</mat-icon>
+    </button>
+    <span>Home Healthy</span>
+    <span class="default-spacer"></span>
+    <button mat-icon-button>
+      <mat-icon routerLink="/" routerLinkActive="active">home</mat-icon>
+    </button>
+    <span class="default-spacer"></span>
+    <div class="menu-bar">
+      <a mat-flat-button color="accent" routerLink="/diets" routerLinkActive="active">Diets</a>
+      <a mat-flat-button color="accent" routerLink="/routines" routerLinkActive="active">Routines</a>
+      <a mat-flat-button color="accent" routerLink="/sessions" routerLinkActive="active">Sessions</a>
+      <a mat-flat-button color="accent" routerLink="/collaborators" routerLinkActive="active">Collaborators</a>
+    </div>
+  </mat-toolbar-row>
+</mat-toolbar>
+<mat-menu #appMenu>
+  <button class="side-button " routerLink="/login" mat-menu-item>Sign In</button>
+  <button class="side-button" routerLink="/register" mat-menu-item>Sign Up</button>
+</mat-menu>

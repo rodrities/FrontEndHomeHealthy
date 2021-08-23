@@ -1,0 +1,78 @@
+h1{
+  color: darkcyan;
+}
+p{
+  color: #C8C8C8;
+}
+span{
+  font-size: 18px;
+}
+.profile-container{
+  background: #424242;
+  width: 70%;
+  height: 70%;
+  margin: auto;
+  display: flex;
+  text-align: center;
+  color: white;
+}
+.image-container{
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+.profile-image{
+  margin:  auto;
+}
+.profile-item{
+  width: 33%;
+}
+.information-container{
+  /*border: 0.5px #008954 solid;*/
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.profile-card{
+  margin: auto;
+  width: 90%;
+  height: 70%;
+  border: darkcyan solid 0.5px;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  box-shadow: 5px 10px 18px darkcyan;
+}
+.information-container span{
+  color: #C8C8C8;
+}
+.information-container p{
+
+  margin: 10%;
+}
+.schedule-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.picker{
+  width: 40%;
+
+}
+button{
+  background: darkcyan;
+
+}
+.add-button{
+  background: darkcyan;
+}
+.schedule-container span{
+  color: darkcyan;
+  margin-left: auto;
+  margin-right: auto;
+}
+.datetimepicker{
+  width: 40%;
+}

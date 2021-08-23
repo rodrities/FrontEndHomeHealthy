@@ -1,0 +1,220 @@
+<app-collaborator-header></app-collaborator-header>
+<div class="form-container">
+  <form (submit)="onSubmit()" #routineForm="ngForm">
+    <div class="container header" >
+      <h2>Create a Routine</h2>
+      <div class="header-form-container">
+        <mat-form-field>
+          <mat-label>Routine Name</mat-label>
+          <input matInput placeholder="Routine Name" name="routineName" required [(ngModel)]="routineData.name">
+        </mat-form-field>
+        <mat-form-field>
+          <mat-label>CustomerId</mat-label>
+          <input matInput placeholder="CustomerId"  name="customerId" required [(ngModel)]="customerId">
+        </mat-form-field>
+      </div>
+      <button class="button" mat-raised-button color="accent">Create</button>
+    </div>
+    <table style="width:80%" class="diet-table">
+      <thead>
+      <tr>
+        <th class="diagonalCross"></th>
+        <th>Monday</th>
+        <th>Tuesday</th>
+        <th>Wednesday</th>
+        <th>Thursday</th>
+        <th>Friday</th>
+        <th>Saturday</th>
+        <th>Sunday</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td>Exercise1</td>
+        <td><mat-form-field>
+          <mat-label>Monday Exercise1</mat-label>
+          <input matInput placeholder="MondayExercise1" name="mondayExercise1"  [(ngModel)]="routineData.firstExerciseMonday">
+        </mat-form-field></td>
+        <td><mat-form-field>
+          <mat-label>Tuesday Exercise1</mat-label>
+          <input matInput placeholder="TuesdayExercise1" name="tuesdayExercise1"  [(ngModel)]="routineData.firstExerciseTuesday">
+        </mat-form-field></td>
+        <td><mat-form-field>
+          <mat-label>Wednesday Exercise1</mat-label>
+          <input matInput placeholder="WednesdayExercise1" name="wednesdayExercise1"  [(ngModel)]="routineData.firstExerciseWednesday">
+        </mat-form-field></td>
+        <td><mat-form-field>
+          <mat-label>Thursday Exercise1</mat-label>
+          <input matInput placeholder="ThursdayExercise1" name="thursdayExercise1"  [(ngModel)]="routineData.firstExerciseThursday">
+        </mat-form-field></td>
+        <td><mat-form-field>
+          <mat-label>Friday Exercise1</mat-label>
+          <input matInput placeholder="fridayExercise1" name="fridayExercise1"  [(ngModel)]="routineData.firstExerciseFriday">
+        </mat-form-field></td>
+        <td><mat-form-field>
+          <mat-label>Saturday Exercise1</mat-label>
+          <input matInput placeholder="SaturdayExercise1" name="saturdayExercise1"  [(ngModel)]="routineData.firstExerciseSaturday">
+        </mat-form-field></td>
+        <td><mat-form-field>
+          <mat-label>Sunday Exercise1</mat-label>
+          <input matInput placeholder="SundayExercise1" name="sundayExercise1"  [(ngModel)]="routineData.firstExerciseSunday">
+        </mat-form-field></td>
+      </tr>
+      <tr>
+        <td>Exercise2</td>
+        <td><mat-form-field>
+          <mat-label>Monday Exercise2</mat-label>
+          <input matInput placeholder="MondayExercise2" name="mondayExercise2"  [(ngModel)]="routineData.secondExerciseMonday">
+        </mat-form-field></td>
+        <td><mat-form-field>
+          <mat-label>Tuesday Exercise2</mat-label>
+          <input matInput placeholder="TuesdayExercise2" name="tuesdayExercise2"  [(ngModel)]="routineData.secondExerciseTuesday">
+        </mat-form-field></td>
+        <td><mat-form-field>
+          <mat-label>Wednesday Exercise2</mat-label>
+          <input matInput placeholder="WednesdayExercise2" name="wednesdayExercise2"  [(ngModel)]="routineData.secondExerciseWednesday">
+        </mat-form-field></td>
+        <td><mat-form-field>
+          <mat-label>Thursday Exercise2</mat-label>
+          <input matInput placeholder="ThursdayExercise2" name="thursdayExercise2"  [(ngModel)]="routineData.secondExerciseThursday">
+        </mat-form-field></td>
+        <td><mat-form-field>
+          <mat-label>Friday Exercise2</mat-label>
+          <input matInput placeholder="FridayExercise2" name="fridayExercise2"  [(ngModel)]="routineData.secondExerciseFriday">
+        </mat-form-field></td>
+        <td><mat-form-field>
+          <mat-label>Saturday Exercise2</mat-label>
+          <input matInput placeholder="SaturdayExercise2" name="saturdayExercise2"  [(ngModel)]="routineData.secondExerciseSaturday">
+        </mat-form-field></td>
+        <td><mat-form-field>
+          <mat-label>Sunday Breakfast</mat-label>
+          <input matInput placeholder="SundayExercise2" name="sundayExercise2"  [(ngModel)]="routineData.secondExerciseSunday">
+        </mat-form-field></td>
+      </tr>
+      <tr>
+        <td>Exercise3</td>
+        <td><mat-form-field>
+          <mat-label>Monday Exercise3</mat-label>
+          <input matInput placeholder="MondayExercise3" name="mondayExercise3"  [(ngModel)]="routineData.thirdExerciseMonday">
+        </mat-form-field></td>
+        <td><mat-form-field>
+          <mat-label>Tuesday Exercise3</mat-label>
+          <input matInput placeholder="TuesdayExercise3" name="tuesdayExercise3"  [(ngModel)]="routineData.thirdExerciseTuesday">
+        </mat-form-field></td>
+        <td><mat-form-field>
+          <mat-label>Wednesday Exercise3</mat-label>
+          <input matInput placeholder="WednesdayExercise3" name="wednesdayExercise3"  [(ngModel)]="routineData.thirdExerciseWednesday">
+        </mat-form-field></td>
+        <td><mat-form-field>
+          <mat-label>Thursday Exercise3</mat-label>
+          <input matInput placeholder="ThursdayExercise3" name="thursdayExercise3"  [(ngModel)]="routineData.thirdExerciseThursday">
+        </mat-form-field></td>
+        <td><mat-form-field>
+          <mat-label>Friday Exercise3</mat-label>
+          <input matInput placeholder="FridayExercise3" name="fridayExercise3"  [(ngModel)]="routineData.thirdExerciseFriday">
+        </mat-form-field></td>
+        <td><mat-form-field>
+          <mat-label>Saturday Exercise3</mat-label>
+          <input matInput placeholder="SaturdayExercise3" name="saturdayExercise3"  [(ngModel)]="routineData.thirdExerciseSaturday">
+        </mat-form-field></td>
+        <td><mat-form-field>
+          <mat-label>Sunday Exercise3</mat-label>
+          <input matInput placeholder="SundayExercise3" name="sundayExercise3"  [(ngModel)]="routineData.thirdExerciseSunday">
+        </mat-form-field></td>
+      </tr>
+      <tr>
+        <td>Exercise4</td>
+        <td><mat-form-field>
+          <mat-label>Monday Exercise4</mat-label>
+          <input matInput placeholder="MondayExercise4" name="mondayExercise4"  [(ngModel)]="routineData.fourthExerciseMonday">
+        </mat-form-field></td>
+        <td><mat-form-field>
+          <mat-label>Tuesday Exercise4</mat-label>
+          <input matInput placeholder="TuesdayLunch" name="tuesdayExercise4"  [(ngModel)]="routineData.fourthExerciseTuesday">
+        </mat-form-field></td>
+        <td><mat-form-field>
+          <mat-label>Wednesday Exercise4</mat-label>
+          <input matInput placeholder="WednesdayExercise4" name="wednesdayExercise4"  [(ngModel)]="routineData.fourthExerciseWednesday">
+        </mat-form-field></td>
+        <td><mat-form-field>
+          <mat-label>Thursday Exercise4</mat-label>
+          <input matInput placeholder="ThursdayExercise4" name="thursdayExercise4"  [(ngModel)]="routineData.fourthExerciseThursday">
+        </mat-form-field></td>
+        <td><mat-form-field>
+          <mat-label>Friday Exercise4</mat-label>
+          <input matInput placeholder="FridayExercise4" name="fridayExercise4"  [(ngModel)]="routineData.fourthExerciseFriday">
+        </mat-form-field></td>
+        <td><mat-form-field>
+          <mat-label>Saturday Exercise4</mat-label>
+          <input matInput placeholder="SaturdayExercise4" name="saturdayExercise4"  [(ngModel)]="routineData.fourthExerciseSaturday">
+        </mat-form-field></td>
+        <td><mat-form-field>
+          <mat-label>Sunday Exercise4</mat-label>
+          <input matInput placeholder="SundayExercise4" name="sundayExercise4"  [(ngModel)]="routineData.fourthExerciseSunday">
+        </mat-form-field></td>
+      </tr>
+      <tr>
+        <td>Exercise5</td>
+        <td><mat-form-field>
+          <mat-label>Monday Exercise5</mat-label>
+          <input matInput placeholder="MondayExercise5" name="mondayExercise5"  [(ngModel)]="routineData.fifthExerciseMonday">
+        </mat-form-field></td>
+        <td><mat-form-field>
+          <mat-label>Tuesday Exercise5</mat-label>
+          <input matInput placeholder="TuesdayExercise5" name="tuesdayExercise5"  [(ngModel)]="routineData.fifthExerciseTuesday">
+        </mat-form-field></td>
+        <td><mat-form-field>
+          <mat-label>Wednesday Exercise5</mat-label>
+          <input matInput placeholder="WednesdayExercise5" name="wednesdayExercise5"  [(ngModel)]="routineData.fifthExerciseWednesday">
+        </mat-form-field></td>
+        <td><mat-form-field>
+          <mat-label>Thursday Exercise5</mat-label>
+          <input matInput placeholder="ThursdayExercise5" name="thursdayExercise5"  [(ngModel)]="routineData.fifthExerciseThursday">
+        </mat-form-field></td>
+        <td><mat-form-field>
+          <mat-label>Friday Exercise5</mat-label>
+          <input matInput placeholder="FridayExercise5" name="fridayExercise5"  [(ngModel)]="routineData.fifthExerciseFriday">
+        </mat-form-field></td>
+        <td><mat-form-field>
+          <mat-label>Saturday Exercise5</mat-label>
+          <input matInput placeholder="SaturdayExercise5" name="saturdayExercise5"  [(ngModel)]="routineData.fifthExerciseSaturday">
+        </mat-form-field></td>
+        <td><mat-form-field>
+          <mat-label>Sunday Exercise5</mat-label>
+          <input matInput placeholder="SundayExercise5" name="sundayExercise5"  [(ngModel)]="routineData.fifthExerciseSunday">
+        </mat-form-field></td>
+      </tr>
+      <tr>
+        <td>Exercise6</td>
+        <td><mat-form-field>
+          <mat-label>Monday Exercise6</mat-label>
+          <input matInput placeholder="MondayExercise6" name="mondayExercise6"  [(ngModel)]="routineData.sixthExerciseMonday">
+        </mat-form-field></td>
+        <td><mat-form-field>
+          <mat-label>Tuesday Exercise6</mat-label>
+          <input matInput placeholder="TuesdayExercise6" name="tuesdayExercise6"  [(ngModel)]="routineData.sixthExerciseTuesday">
+        </mat-form-field></td>
+        <td><mat-form-field>
+          <mat-label>Wednesday Exercise6</mat-label>
+          <input matInput placeholder="WednesdayExercise6" name="wednesdayExercise6"  [(ngModel)]="routineData.sixthExerciseWednesday">
+        </mat-form-field></td>
+        <td><mat-form-field>
+          <mat-label>Thursday Exercise6</mat-label>
+          <input matInput placeholder="ThursdayExercise6" name="thursdayExercise6"  [(ngModel)]="routineData.sixthExerciseThursday">
+        </mat-form-field></td>
+        <td><mat-form-field>
+          <mat-label>Friday Exercise6</mat-label>
+          <input matInput placeholder="FridayExercise6" name="fridayExercise6"  [(ngModel)]="routineData.sixthExerciseFriday">
+        </mat-form-field></td>
+        <td><mat-form-field>
+          <mat-label>Saturday Exercise6</mat-label>
+          <input matInput placeholder="SaturdayExercise6" name="saturdayExercise6"  [(ngModel)]="routineData.sixthExerciseSaturday">
+        </mat-form-field></td>
+        <td><mat-form-field>
+          <mat-label>Sunday Exercise6</mat-label>
+          <input matInput placeholder="SundayExercise6" name="sundayExercise6"  [(ngModel)]="routineData.sixthExerciseSunday">
+        </mat-form-field></td>
+      </tr>
+    </table>
+  </form>
+</div>

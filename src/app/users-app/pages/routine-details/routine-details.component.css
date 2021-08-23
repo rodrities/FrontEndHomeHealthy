@@ -1,0 +1,51 @@
+h1 {
+  color: #00ad5f;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.diet-table{
+
+  background: #222222;
+  border-collapse: collapse;
+  margin: auto;
+  margin-top: 80px;
+  font-size: 23px;
+  min-width: 400px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  color: #717F76;
+}
+.diet-table thead tr {
+  height: 60px;
+  background-color: #393939;
+  color: #00ad5f;
+}
+.diet-table thead tr th{
+  text-align: center;
+}
+.diet-table tbody tr {
+
+  height: 40px;
+  text-align: center;
+  font-size: 18px;
+}
+.diet-table tbody tr td{
+  padding: 11px;
+
+}
+.diet-table tbody tr td:nth-child(1){
+  color: #00ad5f;
+  background-color: #393939;
+}
+
+.diagonalCross{
+  position:   relative;
+  background:  linear-gradient(to right top, #393939 0%,#393939 49.9%,#00ad5f 50%,#00ad5f 51%,#393939 51.1%,#393939 100%) !important;
+  background-color: green;
+}
+
+tr:hover {background-color:#393939;}
+td:hover {color:#00ad5f;}
+

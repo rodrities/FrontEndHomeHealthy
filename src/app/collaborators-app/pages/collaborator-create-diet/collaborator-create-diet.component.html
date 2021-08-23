@@ -1,0 +1,253 @@
+<app-collaborator-header></app-collaborator-header>
+<!--<mat-card>
+  <mat-card-header>
+    <mat-card-title>Create a new Diet</mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <form  #studentForm="ngForm">
+      <p>
+        <mat-form-field>
+          <mat-label>Student Name</mat-label>
+          <input matInput placeholder="Name" name="name" required [(ngModel)]="dietData.name">
+        </mat-form-field>
+        <mat-form-field>
+          <mat-label>Age</mat-label>
+          <input matInput placeholder="Age" name="age" type="number" required [(ngModel)]="dietData.sundayDinner">
+        </mat-form-field>
+      </p>
+      <p>
+        <mat-form-field>
+          <mat-label>Address</mat-label>
+          <input matInput placeholder="Address" name="address" required [(ngModel)]="dietData.mondayDinner">
+        </mat-form-field>
+      </p>
+      <p>
+        <ng-container>
+          <button mat-button color="primary">Add</button>
+        </ng-container>
+      </p>
+    </form>
+  </mat-card-content>
+</mat-card>
+-->
+<div class="form-container">
+  <form (submit)="onSubmit()" #dietForm="ngForm">
+    <div class="container header" >
+      <h2>Create a Diet</h2>
+      <div class="header-form-container">
+        <mat-form-field>
+          <mat-label>Diet Name</mat-label>
+          <input matInput placeholder="Diet Name" name="dietName" required [(ngModel)]="dietData.name">
+        </mat-form-field>
+        <mat-form-field>
+          <mat-label>CustomerId</mat-label>
+          <input matInput placeholder="CustomerId"  name="customerId" required [(ngModel)]="customerId">
+        </mat-form-field>
+      </div>
+      <button class="button" mat-raised-button color="accent">Create</button>
+    </div>
+    <table style="width:80%" class="diet-table">
+      <thead>
+      <tr>
+        <th class="diagonalCross"></th>
+        <th>Monday</th>
+        <th>Tuesday</th>
+        <th>Wednesday</th>
+        <th>Thursday</th>
+        <th>Friday</th>
+        <th>Saturday</th>
+        <th>Sunday</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td>Early Morning</td>
+        <td><mat-form-field>
+          <mat-label>Monday EarlyMorning</mat-label>
+          <input matInput placeholder="MondayEarlyMorning" name="mondayEarlyMorning"  [(ngModel)]="dietData.mondayEarlyMorning">
+        </mat-form-field></td>
+        <td><mat-form-field>
+          <mat-label>Tuesday EarlyMorning</mat-label>
+          <input matInput placeholder="TuesdayEarlyMorning" name="tuesdayEarlyMorning"  [(ngModel)]="dietData.tuesdayEarlyMorning">
+        </mat-form-field></td>
+        <td><mat-form-field>
+          <mat-label>Wednesday EarlyMorning</mat-label>
+          <input matInput placeholder="WednesdayEarlyMorning" name="wednesdayEarlyMorning"  [(ngModel)]="dietData.wednesdayEarlyMorning">
+        </mat-form-field></td>
+        <td><mat-form-field>
+          <mat-label>Thursday EarlyMorning</mat-label>
+          <input matInput placeholder="ThursdayEarlyMorning" name="thursdayEarlyMorning"  [(ngModel)]="dietData.thursdayEarlyMorning">
+        </mat-form-field></td>
+        <td><mat-form-field>
+          <mat-label>Friday EarlyMorning</mat-label>
+          <input matInput placeholder="fridayEarlyMorning" name="fridayEarlyMorning"  [(ngModel)]="dietData.fridayEarlyMorning">
+        </mat-form-field></td>
+        <td><mat-form-field>
+          <mat-label>Saturday EarlyMorning</mat-label>
+          <input matInput placeholder="SaturdayEarlyMorning" name="saturdayEarlyMorning"  [(ngModel)]="dietData.saturdayEarlyMorning">
+        </mat-form-field></td>
+        <td><mat-form-field>
+          <mat-label>Sunday EarlyMorning</mat-label>
+          <input matInput placeholder="SundayEarlyMorning" name="sundayEarlyMorning"  [(ngModel)]="dietData.sundayEarlyMorning">
+        </mat-form-field></td>
+      </tr>
+      <tr>
+        <td>Breakfast</td>
+        <td><mat-form-field>
+          <mat-label>Monday Breakfast</mat-label>
+          <input matInput placeholder="MondayBreakfast" name="mondayBreakfast"  [(ngModel)]="dietData.mondayBreakfast">
+        </mat-form-field></td>
+        <td><mat-form-field>
+          <mat-label>Tuesday Breakfast</mat-label>
+          <input matInput placeholder="TuesdayBreakfast" name="tuesdayBreakfast"  [(ngModel)]="dietData.tuesdayBreakfast">
+        </mat-form-field></td>
+        <td><mat-form-field>
+          <mat-label>Wednesday Breakfast</mat-label>
+          <input matInput placeholder="WednesdayBreakfast" name="wednesdayBreakfast"  [(ngModel)]="dietData.wednesdayBreakfast">
+        </mat-form-field></td>
+        <td><mat-form-field>
+          <mat-label>ThursdayBreakfast</mat-label>
+          <input matInput placeholder="ThursdayBreakfast" name="thursdayBreakfast"  [(ngModel)]="dietData.thursdayBreakfast">
+        </mat-form-field></td>
+        <td><mat-form-field>
+          <mat-label>Friday Breakfast</mat-label>
+          <input matInput placeholder="FridayBreakfast" name="fridayBreakfast"  [(ngModel)]="dietData.fridayBreakfast">
+        </mat-form-field></td>
+        <td><mat-form-field>
+          <mat-label>Saturday Breakfast</mat-label>
+          <input matInput placeholder="SaturdayBreakfast" name="saturdayBreakfast"  [(ngModel)]="dietData.saturdayBreakfast">
+        </mat-form-field></td>
+        <td><mat-form-field>
+          <mat-label>Sunday Breakfast</mat-label>
+          <input matInput placeholder="SundayBreakfast" name="sundayBreakfast"  [(ngModel)]="dietData.sundayBreakfast">
+        </mat-form-field></td>
+      </tr>
+      <tr>
+        <td>Mid Morning</td>
+        <td><mat-form-field>
+          <mat-label>Monday MidMorning</mat-label>
+          <input matInput placeholder="MondayMidMorning" name="mondayMidMorning"  [(ngModel)]="dietData.mondayMidMorning">
+        </mat-form-field></td>
+        <td><mat-form-field>
+          <mat-label>Tuesday MidMorning</mat-label>
+          <input matInput placeholder="TuesdayMidMorning" name="tuesdayMidMorning"  [(ngModel)]="dietData.tuesdayMidMorning">
+        </mat-form-field></td>
+        <td><mat-form-field>
+          <mat-label>Wednesday MidMorning</mat-label>
+          <input matInput placeholder="WednesdayMidMorning" name="wednesdayMidMorning"  [(ngModel)]="dietData.wednesdayMidMorning">
+        </mat-form-field></td>
+        <td><mat-form-field>
+          <mat-label>Thursday MidMorning</mat-label>
+          <input matInput placeholder="ThursdayMidMorning" name="thursdayMidMorning"  [(ngModel)]="dietData.thursdayMidMorning ">
+        </mat-form-field></td>
+        <td><mat-form-field>
+          <mat-label>Friday MidMorning</mat-label>
+          <input matInput placeholder="FridayMidMorning" name="fridayMidMorning"  [(ngModel)]="dietData.fridayMidMorning">
+        </mat-form-field></td>
+        <td><mat-form-field>
+          <mat-label>Saturday MidMorning</mat-label>
+          <input matInput placeholder="SaturdayMidMorning" name="saturdayMidMorning"  [(ngModel)]="dietData.saturdayMidMorning">
+        </mat-form-field></td>
+        <td><mat-form-field>
+          <mat-label>SundayMidMorning</mat-label>
+          <input matInput placeholder="SundayMidMorning" name="sundayMidMorning"  [(ngModel)]="dietData.sundayMidMorning">
+        </mat-form-field></td>
+      </tr>
+      <tr>
+        <td>Lunch</td>
+        <td><mat-form-field>
+          <mat-label>Monday Lunch</mat-label>
+          <input matInput placeholder="MondayLunch" name="mondayLunch"  [(ngModel)]="dietData.mondayLunch">
+        </mat-form-field></td>
+        <td><mat-form-field>
+          <mat-label>Tuesday Lunch</mat-label>
+          <input matInput placeholder="TuesdayLunch" name="tuesdayLunch"  [(ngModel)]="dietData.tuesdayLunch">
+        </mat-form-field></td>
+        <td><mat-form-field>
+          <mat-label>Wednesday Lunch</mat-label>
+          <input matInput placeholder="WednesdayLunch" name="wednesdayLunch"  [(ngModel)]="dietData.wednesdayLunch">
+        </mat-form-field></td>
+        <td><mat-form-field>
+          <mat-label>Thursday Lunch</mat-label>
+          <input matInput placeholder="ThursdayLunch" name="thursdayLunch"  [(ngModel)]="dietData.thursdayLunch ">
+        </mat-form-field></td>
+        <td><mat-form-field>
+          <mat-label>Friday Lunch</mat-label>
+          <input matInput placeholder="FridayLunch" name="fridayLunch"  [(ngModel)]="dietData.fridayLunch">
+        </mat-form-field></td>
+        <td><mat-form-field>
+          <mat-label>Saturday Lunch</mat-label>
+          <input matInput placeholder="SaturdayLunch" name="saturdayLunch"  [(ngModel)]="dietData.saturdayLunch">
+        </mat-form-field></td>
+        <td><mat-form-field>
+          <mat-label>Sunday Lunch</mat-label>
+          <input matInput placeholder="SundayLunch" name="sundayLunch"  [(ngModel)]="dietData.sundayLunch">
+        </mat-form-field></td>
+      </tr>
+      <tr>
+        <td>Mid Noon</td>
+        <td><mat-form-field>
+          <mat-label>Monday MidNoon</mat-label>
+          <input matInput placeholder="MondayMidNoon" name="mondayMidNoon"  [(ngModel)]="dietData.mondayMidNoon">
+        </mat-form-field></td>
+        <td><mat-form-field>
+          <mat-label>Tuesday MidNoon</mat-label>
+          <input matInput placeholder="TuesdayMidNoon" name="tuesdayMidNoon"  [(ngModel)]="dietData.tuesdayMidNoon">
+        </mat-form-field></td>
+        <td><mat-form-field>
+          <mat-label>Wednesday MidNoon</mat-label>
+          <input matInput placeholder="WednesdayMidNoon" name="wednesdayMidNoon"  [(ngModel)]="dietData.wednesdayMidNoon">
+        </mat-form-field></td>
+        <td><mat-form-field>
+          <mat-label>Thursday MidNoon</mat-label>
+          <input matInput placeholder="ThursdayMidNoon" name="thursdayMidNoon"  [(ngModel)]="dietData.thursdayMidNoon ">
+        </mat-form-field></td>
+        <td><mat-form-field>
+          <mat-label>Friday MidNoon</mat-label>
+          <input matInput placeholder="FridayMidNoon" name="fridayMidNoon"  [(ngModel)]="dietData.fridayMidNoon">
+        </mat-form-field></td>
+        <td><mat-form-field>
+          <mat-label>Saturday MidNoon</mat-label>
+          <input matInput placeholder="SaturdayMidNoon" name="saturdayMidNoon"  [(ngModel)]="dietData.saturdayMidNoon">
+        </mat-form-field></td>
+        <td><mat-form-field>
+          <mat-label>Sunday MidNoon</mat-label>
+          <input matInput placeholder="SundayMidNoon" name="sundayMidNoon"  [(ngModel)]="dietData.sundayMidNoon">
+        </mat-form-field></td>
+      </tr>
+      <tr>
+        <td>Dinner</td>
+        <td><mat-form-field>
+          <mat-label>Monday Dinner</mat-label>
+          <input matInput placeholder="MondayDinner" name="mondayDinner"  [(ngModel)]="dietData.mondayDinner">
+        </mat-form-field></td>
+        <td><mat-form-field>
+          <mat-label>Tuesday Dinner</mat-label>
+          <input matInput placeholder="TuesdayDinner" name="tuesdayDinner"  [(ngModel)]="dietData.tuesdayDinner">
+        </mat-form-field></td>
+        <td><mat-form-field>
+          <mat-label>Wednesday Dinner</mat-label>
+          <input matInput placeholder="WednesdayDinner" name="wednesdayDinner"  [(ngModel)]="dietData.wednesdayDinner">
+        </mat-form-field></td>
+        <td><mat-form-field>
+          <mat-label>Thursday Dinner</mat-label>
+          <input matInput placeholder="ThursdayDinner" name="thursdayDinner"  [(ngModel)]="dietData.thursdayDinner ">
+        </mat-form-field></td>
+        <td><mat-form-field>
+          <mat-label>Friday Dinner</mat-label>
+          <input matInput placeholder="FridayDinner" name="fridayDinner"  [(ngModel)]="dietData.fridayDinner">
+        </mat-form-field></td>
+        <td><mat-form-field>
+          <mat-label>Saturday Dinner</mat-label>
+          <input matInput placeholder="SaturdayDinner" name="saturdayDinner"  [(ngModel)]="dietData.saturdayDinner">
+        </mat-form-field></td>
+        <td><mat-form-field>
+          <mat-label>Sunday Dinner</mat-label>
+          <input matInput placeholder="SundayDinner" name="sundayDinner"  [(ngModel)]="dietData.sundayDinner">
+        </mat-form-field></td>
+      </tr>
+    </table>
+  </form>
+</div>
+
+

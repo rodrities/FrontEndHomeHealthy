@@ -1,0 +1,23 @@
+<app-collaborator-header></app-collaborator-header>
+<div class="container">
+  <h2>Your Sessions:</h2>
+  <mat-card>
+    <mat-card-content *ngFor="let data of dataSource.data">
+      <mat-card >
+        <mat-card-title>
+          {{ data.link }}
+        </mat-card-title>
+        <mat-card-content>
+          <p>Inicio: {{ data.startAt | date:'medium' }}</p>
+          <p>Final:  {{ data.endAt | date:'medium' }}</p>
+        </mat-card-content>
+        <div>
+          <button *ngIf="!sessionIsActive(data.startAt , data.endAt)" mat-raised-button disabled>Session Ended</button>
+          <button  class="button-session" *ngIf="sessionIsActive(data.startAt, data.endAt)" mat-raised-button >Enter Session</button>
+        </div>
+      </mat-card>
+    </mat-card-content>
+  </mat-card>
+</div>
+
+

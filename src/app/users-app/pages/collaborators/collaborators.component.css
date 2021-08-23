@@ -1,0 +1,22 @@
+h2{
+  font-size: 25px;
+  margin-bottom: 30px;
+  font-weight: bold;
+  color: #008954;
+}
+.mat-paginator{
+  color: white;
+}
+table {
+  width: 100%;
+}
+.collaborators-container{
+  background: #282E2B;
+}
+th {
+  background-color: #008954;
+  color: white;
+}
+.text-button {
+  color: #008954;
+}

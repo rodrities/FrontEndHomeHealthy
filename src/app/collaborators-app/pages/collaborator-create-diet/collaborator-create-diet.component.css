@@ -1,0 +1,44 @@
+table{
+  border: solid darkcyan;
+}
+table td{
+  border: solid darkcyan;
+}
+.diet-table {
+  background: #1F2321;
+  border-collapse: collapse;
+  margin: auto;
+  margin-top: 80px;
+  font-size: 12px;
+  min-width: 400px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  color: white;
+}
+.diet-table thead tr {
+  height: 60px;
+  background-color: #393939;
+  color: darkcyan;
+}
+.diet-table tbody tr td:nth-child(1){
+  color: darkcyan;
+  background-color: #393939;
+}
+.diet-table tbody tr td{
+  color: cyan;
+}
+.header{
+  text-align: center;
+}
+h2 {
+  font-size: 25px;
+  margin-bottom: 30px;
+  font-weight: bold;
+  color: darkcyan;
+}
+.header-form-container{
+  display: flex;
+  justify-content: space-evenly;
+  color: cyan;
+}
+

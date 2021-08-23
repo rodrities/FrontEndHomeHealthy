@@ -1,0 +1,80 @@
+<app-user-header></app-user-header>
+<div class="cont">
+  <h1> {{routine.name}} </h1>
+  <table style="width:80%" class="diet-table">
+    <thead>
+    <tr>
+      <th class="diagonalCross"></th>
+      <th>Monday</th>
+      <th>Tuesday</th>
+      <th>Wednesday</th>
+      <th>Thursday</th>
+      <th>Friday</th>
+      <th>Saturday</th>
+      <th>Sunday</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <td>Exercise 1</td>
+      <td (click)="ClickExerciseEx($event)"> {{routine.firstExerciseMonday}}</td>
+      <td>{{routine.firstExerciseTuesday}}</td>
+      <td>{{routine.firstExerciseWednesday}}</td>
+      <td>{{routine.firstExerciseThursday}}</td>
+      <td>{{routine.firstExerciseFriday}}</td>
+      <td>{{routine.firstExerciseSaturday}}</td>
+      <td>{{routine.firstExerciseSunday}}</td>
+    </tr>
+    <tr>
+      <td>Exercise 2</td>
+      <td>{{routine.secondExerciseMonday}}</td>
+      <td>{{routine.secondExerciseTuesday}}</td>
+      <td>{{routine.secondExerciseWednesday}}</td>
+      <td>{{routine.secondExerciseThursday}}</td>
+      <td>{{routine.secondExerciseFriday}}</td>
+      <td>{{routine.secondExerciseSaturday}}</td>
+      <td>{{routine.sixthExerciseSunday}}</td>
+    </tr>
+    <tr>
+      <td>Exercise 3</td>
+      <td>{{routine.thirdExerciseMonday}}</td>
+      <td>{{routine.thirdExerciseTuesday}}</td>
+      <td>{{routine.thirdExerciseWednesday}}</td>
+      <td>{{routine.thirdExerciseThursday}}</td>
+      <td>{{routine.thirdExerciseFriday}}</td>
+      <td>{{routine.thirdExerciseSaturday}}</td>
+      <td>{{routine.thirdExerciseSunday}}</td>
+    </tr>
+    <tr>
+      <td>Exercise 4</td>
+      <td>{{routine.firstExerciseMonday}}</td>
+      <td>{{routine.firstExerciseTuesday}}</td>
+      <td>{{routine.firstExerciseWednesday}}</td>
+      <td>{{routine.firstExerciseThursday}}</td>
+      <td>{{routine.firstExerciseFriday}}</td>
+      <td>{{routine.firstExerciseSaturday}}</td>
+      <td>{{routine.firstExerciseSunday}}</td>
+    </tr>
+    <tr>
+      <td>Exercise 5</td>
+      <td>{{routine.firstExerciseMonday}}</td>
+      <td>{{routine.firstExerciseTuesday}}</td>
+      <td>{{routine.firstExerciseWednesday}}</td>
+      <td>{{routine.firstExerciseThursday}}</td>
+      <td>{{routine.firstExerciseFriday}}</td>
+      <td>{{routine.firstExerciseSaturday}}</td>
+      <td>{{routine.firstExerciseSunday}}</td>
+    </tr>
+    <tr>
+      <td>Exercise 6</td>
+      <td>{{routine.sixthExerciseMonday}}</td>
+      <td>{{routine.sixthExerciseTuesday}}</td>
+      <td>{{routine.sixthExerciseWednesday}}</td>
+      <td>{{routine.sixthExerciseThursday}}</td>
+      <td>{{routine.sixthExerciseFriday}}</td>
+      <td>{{routine.sixthExerciseSaturday}}</td>
+      <td>{{routine.sixthExerciseSunday}}</td>
+    </tr>
+    </tbody>
+  </table>
+</div>

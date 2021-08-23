@@ -1,0 +1,19 @@
+h2 {
+  font-size: 25px;
+  margin-bottom: 30px;
+  font-weight: bold;
+  color: #008954;
+}
+.button-detail {
+  background-color: #008954;
+  margin-left: 50px;
+}
+.container-card {
+  border: solid 1px #008954;
+}
+.container-actions {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 50px;
+  margin-left: 33% ;
+}

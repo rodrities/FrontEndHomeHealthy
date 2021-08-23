@@ -1,0 +1,22 @@
+<app-collaborator-header></app-collaborator-header>
+<div class="container">
+  <div class="title-container">
+    <h2>Tus Rutinas:</h2>
+    <button routerLink="/collaborator/create-routine" class="add-button" mat-mini-fab color="accent" aria-label="Example icon button with a plus one icon">
+      <mat-icon>add</mat-icon>
+    </button>
+  </div>
+  <div class="card-grid container">
+    <mat-card class="container-card" *ngFor="let data of dataSource.data">
+      <mat-card-header>
+        <mat-card-title>{{ data.name | uppercase }}</mat-card-title>
+      </mat-card-header>
+      <div class="crop-image">
+        <img src="assets/rutina.jpg" alt="">
+      </div>
+      <mat-card-actions class="container-actions">
+        <a  mat-raised-button class="button-detail" [routerLink]="['/routines', data.id]">Ver detalle</a>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+</div>

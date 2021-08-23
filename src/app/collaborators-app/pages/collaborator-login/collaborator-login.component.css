@@ -1,0 +1,45 @@
+.login-container{
+  height: 100%;
+  display: flex;
+}
+.login-img-container{
+  width: 50%;
+  background-image: url("./../../../../assets/collab-login.png")  ;
+  background-size: cover;
+  background-position: right;
+  background-repeat: no-repeat;
+
+
+}
+
+.form-container {
+  width: 400px;
+  height: 300px;
+  margin: auto;
+  border: solid 2px darkcyan;
+}
+.form-field {
+  display: block;
+}
+
+.container-actions {
+  width: 100px;
+  margin-left: 170px;
+}
+
+mat-card-title {
+  color: darkcyan;
+  font-weight: bold;
+}
+
+.button-login {
+  background-color: darkcyan;
+}
+
+.register-text {
+  margin-left: 23%;
+  color: grey;
+}
+.register-a {
+  color: darkcyan;
+}
