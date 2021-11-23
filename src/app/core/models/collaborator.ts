@@ -6,4 +6,5 @@ export class Collaborator {
   role: string;
   email: string;
   password: string;
+  phone: number
 }

@@ -18,6 +18,7 @@ import {LoginComponent} from "./users-app/pages/login/login.component";
 import {CollaboratorLoginComponent} from "./collaborators-app/pages/collaborator-login/collaborator-login.component";
 import {CollaboratorCreateDietComponent} from "./collaborators-app/pages/collaborator-create-diet/collaborator-create-diet.component";
 import {CollaboratorCreateRoutineComponent} from "./collaborators-app/pages/collaborator-create-routine/collaborator-create-routine.component";
+import {ConferencesComponent} from "./users-app/pages/conferences/conferences.component";
 
 
 const routes: Routes = [
@@ -38,7 +39,8 @@ const routes: Routes = [
   { path: 'login', component: LoginComponent },
   { path: 'collaborator/login', component: CollaboratorLoginComponent},
   { path: 'collaborator/create-diet', component: CollaboratorCreateDietComponent},
-  { path: 'collaborator/create-routine', component: CollaboratorCreateRoutineComponent}
+  { path: 'collaborator/create-routine', component: CollaboratorCreateRoutineComponent},
+  { path: 'conferences', component: ConferencesComponent}
   /*
   { path: 'collaborators/:id', component: CollaboratorProfileComponent },
  /

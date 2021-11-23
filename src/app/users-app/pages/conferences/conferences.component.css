@@ -1,0 +1,33 @@
+h2{
+  font-size: 25px;
+  margin-bottom: 30px;
+  font-weight: bold;
+  color: #008954;
+}
+
+.conference{
+  width: 50vw;
+  display: flex;
+  height: 65vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  border: solid 1px #008954;
+
+}
+
+h3{
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+p{
+  color: white;
+  margin: 0 150px;
+}
+.button-detail {
+  background-color: #008954;
+  margin-left: 50px;
+}

@@ -46,6 +46,7 @@ import { LoginComponent } from './users-app/pages/login/login.component';
 import { CollaboratorLoginComponent } from './collaborators-app/pages/collaborator-login/collaborator-login.component';
 import { CollaboratorCreateDietComponent } from './collaborators-app/pages/collaborator-create-diet/collaborator-create-diet.component';
 import { CollaboratorCreateRoutineComponent } from './collaborators-app/pages/collaborator-create-routine/collaborator-create-routine.component';
+import { ConferencesComponent } from './users-app/pages/conferences/conferences.component';
 
 
 
@@ -73,6 +74,7 @@ import { CollaboratorCreateRoutineComponent } from './collaborators-app/pages/co
     CollaboratorLoginComponent,
     CollaboratorCreateDietComponent,
     CollaboratorCreateRoutineComponent,
+    ConferencesComponent,
 
   ],
   imports: [
